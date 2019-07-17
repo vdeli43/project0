@@ -1,0 +1,52 @@
+h1 {
+    color: red;
+}
+
+.hoho {
+    border: 5px solid red;
+    background-color: lightgray;
+}
+
+h3[id="Page1"] {
+    background-color: lightblue;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+button[name="TOP"]::before {
+    content: "\21d2  Click here:  ";
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 479px){
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+.container > div {
+    background-color: springgreen;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+@media print {
+    .container {
+        flex-wrap: wrap;
+    }
+}
